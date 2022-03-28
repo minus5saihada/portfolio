@@ -1,0 +1,46 @@
+body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 30000px;// kari
+  min-height: 100vh;
+  background-color: #07161F;
+}
+
+main {
+  flex-grow: 1;
+}
+
+.pc-only {
+  display: block;
+  @include media(md) {
+    display: none;
+  }
+}
+
+.sp-only {
+  display: none;
+  @include media(md) {
+    display: block;
+  }
+}
+
+.br-pc {
+  @include media(md) {
+    display: none;
+  }
+}
+
+.br-tab {
+  display: none;
+  @include media(lg) {
+    display: inline;
+  }
+}
+
+.br-sp {
+  display: none;
+  @include media(md) {
+    display: inline;
+  }
+}

@@ -1,0 +1,26 @@
+// js-floater
+.js-floater {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-repeat: repeat;
+  background-size: 100%;
+  width: 100%;
+  height: 100%;
+  transition: background-position 3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  &:nth-child(1) {
+    background-image: url(../../img/common/bg_hexagon_01.png);
+  }
+  &:nth-child(2) {
+    background-image: url(../../img/common/bg_hexagon_02.png);
+  }
+  &:nth-child(3) {
+    background-image: url(../../img/common/bg_hexagon_03.png);
+  }
+  &:nth-child(4) {
+    background-image: url(../../img/common/bg_hexagon_04.png);
+  }
+  &:nth-child(5) {
+    background-image: url(../../img/common/bg_hexagon_05.png);
+  }
+}
