@@ -2,8 +2,8 @@
 .header {
   &__img {
     position: fixed;
-    width: 450px;
-    height: 450px;
+    width: px-to-vw-pc(450);
+    height: px-to-vw-pc(450);
     animation: header-gear-right 7s linear infinite;
     &--open {
       animation: header-gear-left 7s linear infinite;
@@ -11,10 +11,10 @@
   }
   &__line-wrap {
     position: fixed;
-    top: 55px;
-    left: 50px;
-    width: 67px;
-    height: 50px;
+    top: px-to-vw-pc(55);
+    left: px-to-vw-pc(50);
+    width: px-to-vw-pc(67);
+    height: px-to-vw-pc(50);
     z-index: 1;
     cursor: pointer;
   }
@@ -22,7 +22,7 @@
     position: absolute;
     left: 0;
     width: 100%;
-    height: 2px;
+    height: px-to-vw-pc(2);
     background-color: #EAC75A;
     transition: .5s;
     &:nth-child(1) {
@@ -36,7 +36,7 @@
     }
     &--open {
       &:nth-child(1) {
-        top: 22px;
+        top: px-to-vw-pc(22);
         transform: rotate(135deg);
       }
       &:nth-child(2) {
@@ -44,7 +44,7 @@
         opacity: 0;
       }
       &:nth-child(3) {
-        bottom: 24px;
+        bottom: px-to-vw-pc(24);
         transform: rotate(-135deg);
       }
     }
@@ -53,22 +53,22 @@
     position: fixed;
     top: 0;
     left: 0;
-    transform: translateX(-550px);
+    transform: translateX(px-to-vw-pc(-550));
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 40px;
-    width: 550px;
+    gap: px-to-vw-pc(40);
+    width: px-to-vw-pc(550);
     height: 100vh;
     background: linear-gradient(to right, #07161f, rgba($color: #07161f, $alpha: 0.3));
-    padding-left: 100px;
+    padding-left: px-to-vw-pc(100);
     transition: .5s;
     &--open {
       transform: translateX(0);
     }
   }
   &__link {
-    font-size: 60px;
+    font-size: px-to-vw-pc(60);
     color: #d3d3d3;
     transform: translateX(-550px);
     opacity: 0;

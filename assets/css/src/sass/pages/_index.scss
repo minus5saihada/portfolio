@@ -15,6 +15,7 @@
   transition: background-position 3s cubic-bezier(0.165, 0.84, 0.44, 1);
   opacity: 0.3;
   z-index: -1;
+  pointer-events: none;
   &:nth-child(1) {
     background-image: url(../../img/common/bg_hexagon_01.png);
   }
@@ -40,105 +41,107 @@
   width: 100%;
   height: 100%;
   overflow: hidden;
+  pointer-events: none;
   &__img {
     position: absolute;
     transition: 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+    z-index: -1;
     &:nth-child(1) {
-      top: 131px;
-      left: 210px;
-      width: 288.24px;
-      height: 288.24px;
+      top: px-to-vw-pc(131);
+      left: px-to-vw-pc(210);
+      width: px-to-vw-pc(288.24);
+      height: px-to-vw-pc(288.24);
       animation: gear-right 7s linear infinite;
     }
     &:nth-child(2) {
-      top: -107.2px;
-      left: 304px;
-      width: 227.93px;
-      height: 227.93px;
+      top: px-to-vw-pc(-107.2);
+      left: px-to-vw-pc(304);
+      width: px-to-vw-pc(227.93);
+      height: px-to-vw-pc(227.93);
       animation: gear-left 7s linear infinite;
     }
     &:nth-child(3) {
-      top: 80px;
-      left: 480px;
-      width: 136px;
-      height: 136px;
+      top: px-to-vw-pc(80);
+      left: px-to-vw-pc(480);
+      width: px-to-vw-pc(136);
+      height: px-to-vw-pc(136);
       animation: gear-left 7s linear infinite;
     }
     &:nth-child(4) {
-      top: 75.1px;
-      left: 617.2px;
-      width: 170.47px;
-      height: 170.47px;
+      top: px-to-vw-pc(75.1);
+      left: px-to-vw-pc(617.2);
+      width: px-to-vw-pc(170.47);
+      height: px-to-vw-pc(170.47);
       animation: gear-right 7s linear infinite;
     }
     &:nth-child(5) {
-      top: -91.4px;
-      left: 742.5px;
-      width: 198.5px;
-      height: 198.5px;
+      top: px-to-vw-pc(-91.4);
+      left: px-to-vw-pc(742.5);
+      width: px-to-vw-pc(198.5);
+      height: px-to-vw-pc(198.5);
       animation: gear-right 7s linear infinite;
     }
     &:nth-child(6) {
-      top: 111.1px;
-      left: 781.6px;
-      width: 256.75px;
-      height: 256.75px;
+      top: px-to-vw-pc(111.1);
+      left: px-to-vw-pc(781.6);
+      width: px-to-vw-pc(256.75);
+      height: px-to-vw-pc(256.75);
       animation: gear-left 7s linear infinite;
     }
     &:nth-child(7) {
-      top: 77.5px;
-      left: 1017px;
-      width: 135.5px;
-      height: 135.5px;
+      top: px-to-vw-pc(77.5);
+      left: px-to-vw-pc(1017);
+      width: px-to-vw-pc(135.5);
+      height: px-to-vw-pc(135.5);
       animation: gear-right 7s linear infinite;
     }
     &:nth-child(8) {
-      top: 54.7px;
-      left: 1152px;
-      width: 217.24px;
-      height: 217.24px;
+      top: px-to-vw-pc(54.7);
+      left: px-to-vw-pc(1152);
+      width: px-to-vw-pc(217.24);
+      height: px-to-vw-pc(217.24);
       animation: gear-left 7s linear infinite;
     }
     &:nth-child(9) {
-      top: -106.2px;
-      left: 1295.7px;
-      width: 217.24px;
-      height: 217.24px;
+      top: px-to-vw-pc(-106.2);
+      left: px-to-vw-pc(1295.7);
+      width: px-to-vw-pc(217.24);
+      height: px-to-vw-pc(217.24);
       animation: gear-right 7s linear infinite;
     }
     &:nth-child(10) {
-      top: 190.3px;
-      left: 1326.8px;
-      width: 224.17px;
-      height: 224.17px;
+      top: px-to-vw-pc(190.3);
+      left: px-to-vw-pc(1326.8);
+      width: px-to-vw-pc(224.17);
+      height: px-to-vw-pc(224.17);
       animation: gear-right 7s linear infinite;
     }
     &:nth-child(11) {
-      top: 54.7px;
-      left: 1463px;
-      width: 161.71px;
-      height: 161.71px;
+      top: px-to-vw-pc(54.7);
+      left: px-to-vw-pc(1436);
+      width: px-to-vw-pc(161.71);
+      height: px-to-vw-pc(161.71);
       animation: gear-left 7s linear infinite;
     }
     &:nth-child(12) {
-      top: 275.7px;
-      left: 1546.1px;
-      width: 230.63px;
-      height: 230.63px;
+      top: px-to-vw-pc(275.7);
+      left: px-to-vw-pc(1546.1);
+      width: px-to-vw-pc(230.63);
+      height: px-to-vw-pc(230.63);
       animation: gear-left 7s linear infinite;
     }
     &:nth-child(13) {
-      top: 323.1px;
-      left: 1593.5px;
-      width: 136.61px;
-      height: 136.61px;
+      top: px-to-vw-pc(323.1);
+      left: px-to-vw-pc(1593.5);
+      width: px-to-vw-pc(136.61);
+      height: px-to-vw-pc(136.61);
       animation: gear-right 7s linear infinite;
     }
     &:nth-child(14) {
       top: 0;
-      left: 1629.8px;
-      width: 288.49px;
-      height: 288.49px;
+      left: px-to-vw-pc(1629.8);
+      width: px-to-vw-pc(288.49);
+      height: px-to-vw-pc(288.49);
       animation: gear-right 7s linear infinite;
     }
     &--scroll {
@@ -180,7 +183,7 @@
         top: calc(440px + var(--offset) * 1px);
       }
       &:nth-child(13) {
-        top: calc(485px + var(--offset) * 1px);
+        top: calc(700px + var(--offset) * 1px);
       }
       &:nth-child(14) {
         top: calc(var(--offset) * 1px);
@@ -199,11 +202,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    transform: translateY(80px);
-    font-size: 80px;
+    transform: translateY(px-to-vw-pc(80));
+    font-size: px-to-vw-pc(80);
   }
   &__sub-ttl {
-    font-size: 49px;
+    font-size: px-to-vw-pc(138);
+    font-size: px-to-vw-pc(49);
   }
 }
 
@@ -213,16 +217,163 @@
   display: flex;
   justify-content: center;
   pointer-events: none;
+  &--margin-top-300 {
+    margin-top: px-to-vw-pc(300);
+  }
   &__trajectory {
-    width: 3px;
-    height: 324px;
+    width: px-to-vw-pc(3);
+    height: px-to-vw-pc(324);
   }
   &__star {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 28px;
-    height: 28px;
+    width: px-to-vw-pc(28);
+    height: px-to-vw-pc(28);
     animation: shooting-star 2s infinite;
+  }
+}
+
+// about-me
+.about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: px-to-vw-pc(200);
+  margin-top: px-to-vw-pc(300);
+  &__ttl {
+    font-size: px-to-vw-pc(60);
+  }
+  &__txt {
+    font-size: px-to-vw-pc(50);
+    text-align: center;
+    line-height: px-to-vw-pc(80);
+  }
+}
+
+// skills
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: px-to-vw-pc(300);
+  &__ttl {
+    font-size: px-to-vw-pc(60);
+  }
+  &__wrap {
+    display: flex;
+    justify-content: center;
+    gap: px-to-vw-pc(100);
+    flex-wrap: wrap;
+    width: px-to-vw-pc(1500);
+    margin-top: px-to-vw-pc(100);
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: px-to-vw-pc(40);
+    width: px-to-vw-pc(700);
+  }
+  &__skill {
+    font-size: px-to-vw-pc(50);
+    text-align: center;
+  }
+  &__level {
+    display: flex;
+    flex-direction: column;
+    gap: px-to-vw-pc(20);
+  }
+  &__language {
+    font-size: px-to-vw-pc(40);
+  }
+  &__progress-bar {
+    display: flex;
+    width: 100%;
+    height: px-to-vw-pc(50);
+    background-color: #fff;
+  }
+  &__bar {
+    display: flex;
+    align-items: center;
+    gap: px-to-vw-pc(5);
+    background-color: #707070;
+    font-size: px-to-vw-pc(20);
+    color: #fff;
+    padding-left: px-to-vw-pc(15);
+  }
+}
+
+// work
+.work {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: px-to-vw-pc(50);
+  margin-top: px-to-vw-pc(300);
+  &__ttl {
+    font-size: px-to-vw-pc(60);
+  }
+  &__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: px-to-vw-pc(40);
+    &:hover {
+      .work__arrow {
+        animation: arrow-to-right .5s;
+      }
+    }
+  }
+  &__dummy {
+    width: px-to-vw-pc(600);
+    height: px-to-vw-pc(350);
+    background: #fff;
+    border: 1px solid #707070;
+  }
+  &__txt {
+    display: flex;
+    gap: px-to-vw-pc(20);
+    font-size: px-to-vw-pc(50);
+  }
+  &__arrow {
+    transform: translateY(px-to-vw-pc(8));
+    animation: arrow-to-left .5s;
+  }
+}
+
+// contact
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: px-to-vw-pc(300) 0;
+  &__ttl {
+    font-size: px-to-vw-pc(60);
+  }
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+  }
+  &__txt {
+    font-size: px-to-vw-pc(50);
+  }
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: px-to-vw-pc(45);
+    width: px-to-vw-pc(450);
+    height: px-to-vw-pc(76);
+    background: #fff;
+    border: 1px solid #707070;
+    margin: px-to-vw-pc(20) auto;
+  }
+  &__link-txt {
+    font-size: px-to-vw-pc(35);
+    transform: translateY(px-to-vw-pc(4));
+  }
+  &__img {
+    width: px-to-vw-pc(55);
+    height: px-to-vw-pc(39.51);
   }
 }

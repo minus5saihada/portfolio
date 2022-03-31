@@ -10,6 +10,7 @@
   <script src="./assets/js/floater.js"></script>
   <script src="./assets/js/toggle.js"></script>
   <script src="./assets/js/gear.js"></script>
+  <script src="./assets/js/smooth-scroll.js"></script>
   <title>Document</title>
 </head>
 <body>
@@ -45,15 +46,15 @@
     <span class="header__line"></span>
   </div>
   <nav class="header__menu">
-    <a href="" class="header__link">Top</a>
-    <a href="" class="header__link">About me</a>
-    <a href="" class="header__link">Skills</a>
-    <a href="" class="header__link">Work</a>
-    <a href="" class="header__link">Contact</a>
+    <a href="#kv" class="header__link">Top</a>
+    <a href="#about-me" class="header__link">About me</a>
+    <a href="#skills" class="header__link">Skills</a>
+    <a href="#work" class="header__link">Work</a>
+    <a href="#contact" class="header__link">Contact</a>
   </nav>
 </header>
 
-<section class="kv">
+<section id="kv" class="kv">
   <h1 class="kv__ttl">Nagisa Uragam<span class="kv__sub-ttl">web developer</span></h1>
 </section>
 
@@ -61,6 +62,142 @@
   <img src="./assets/img/common/img_trajectory.svg" alt="" class="separator__trajectory">
   <img src="./assets/img/common/img_shooting-star.svg" alt="" class="separator__star">
 </div>
+
+<section id="about-me" class="about-me">
+  <h2 class="about-me__ttl">About me</h2>
+  <p class="about-me__txt">Tapioca milk tea store manager<br>↓<br>Business system engineer<br>↓<br>Freelance web engineer</p>
+</section>
+
+<div class="separator separator--margin-top-300">
+  <img src="./assets/img/common/img_trajectory.svg" alt="" class="separator__trajectory">
+  <img src="./assets/img/common/img_shooting-star.svg" alt="" class="separator__star">
+</div>
+
+<section id="skills" class="skills">
+  <h2 class="skills__ttl">Skills</h2>
+  <div class="skills__wrap">
+    <div class="skills__item">
+      <h3 class="skills__skill">Frontend</h3>
+      <div class="skills__level">
+        <h4 class="skills__language">HTML/Pug</h4>
+        <div class="skills__progress-bar">
+          <p class="skills__bar" style="width: calc(12/36*100%);"><span">13</span><span>months</span></p>
+        </div>
+      </div>
+      <div class="skills__level">
+        <h4 class="skills__language">CSS/Sass/BEM</h4>
+        <div class="skills__progress-bar">
+          <p class="skills__bar" style="width: calc(12/36*100%);"><span">13</span><span>months</span></p>
+        </div>
+      </div>
+      <div class="skills__level">
+        <h4 class="skills__language">JavaScript/jQuery/Vue/React</h4>
+        <div class="skills__progress-bar">
+          <p class="skills__bar" style="width: calc(12/36*100%);"><span">13</span><span>months</span></p>
+        </div>
+      </div>
+      <div class="skills__level">
+        <h4 class="skills__language">XD/AI/Ps/Figma</h4>
+        <div class="skills__progress-bar">
+          <p class="skills__bar" style="width: calc(12/36*100%);"><span">13</span><span>months</span></p>
+        </div>
+      </div>
+    </div>
+    <div class="skills__item">
+      <h3 class="skills__skill">Backend</h3>
+      <div class="skills__level">
+        <h4 class="skills__language">PHP/Laravel</h4>
+        <div class="skills__progress-bar">
+          <p class="skills__bar" style="width: calc(12/36*100%);"><span">13</span><span>months</span></p>
+        </div>
+      </div>
+      <div class="skills__level">
+        <h4 class="skills__language">Java/Spring</h4>
+        <div class="skills__progress-bar">
+          <p class="skills__bar" style="width: calc(12/36*100%);"><span">13</span><span>months</span></p>
+        </div>
+      </div>
+      <div class="skills__level">
+        <h4 class="skills__language">ShellScript</h4>
+        <div class="skills__progress-bar">
+          <p class="skills__bar" style="width: calc(12/36*100%);"><span">13</span><span>months</span></p>
+        </div>
+      </div>
+      <div class="skills__level">
+        <h4 class="skills__language">SQL</h4>
+        <div class="skills__progress-bar">
+          <p class="skills__bar" style="width: calc(12/36*100%);"><span">13</span><span>months</span></p>
+        </div>
+      </div>
+    </div>
+    <div class="skills__item">
+      <h3 class="skills__skill">Other</h3>
+      <div class="skills__level">
+        <h4 class="skills__language">Docker</h4>
+        <div class="skills__progress-bar">
+          <p class="skills__bar" style="width: calc(12/36*100%);"><span">13</span><span>months</span></p>
+        </div>
+      </div>
+      <div class="skills__level">
+        <h4 class="skills__language">WordPress</h4>
+        <div class="skills__progress-bar">
+          <p class="skills__bar" style="width: calc(12/36*100%);"><span">13</span><span>months</span></p>
+        </div>
+      </div>
+      <div class="skills__level">
+        <h4 class="skills__language">Git/GitHub/SVN</h4>
+        <div class="skills__progress-bar">
+          <p class="skills__bar" style="width: calc(12/36*100%);"><span">13</span><span>months</span></p>
+        </div>
+      </div>
+      <div class="skills__level">
+        <h4 class="skills__language">Gulp/npm/webpack</h4>
+        <div class="skills__progress-bar">
+          <p class="skills__bar" style="width: calc(12/36*100%);"><span">13</span><span>months</span></p>
+        </div>
+      </div>
+      <div class="skills__level">
+        <h4 class="skills__language">Linux</h4>
+        <div class="skills__progress-bar">
+          <p class="skills__bar" style="width: calc(12/36*100%);"><span">13</span><span>months</span></p>
+        </div>
+      </div>
+      <div class="skills__level">
+        <h4 class="skills__language">Apache/NGINX</h4>
+        <div class="skills__progress-bar">
+          <p class="skills__bar" style="width: calc(12/36*100%);"><span">13</span><span>months</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="separator separator--margin-top-300">
+  <img src="./assets/img/common/img_trajectory.svg" alt="" class="separator__trajectory">
+  <img src="./assets/img/common/img_shooting-star.svg" alt="" class="separator__star">
+</div>
+
+<section id="work" class="work">
+  <h2 class="work__ttl">Work</h2>
+  <a href="" class="work__link">
+    <div class="work__dummy"></div>
+    <p class="work__txt">To my homepage<span class="work__arrow">→</span></p>
+  </a>
+</section>
+
+<div class="separator separator--margin-top-300">
+  <img src="./assets/img/common/img_trajectory.svg" alt="" class="separator__trajectory">
+  <img src="./assets/img/common/img_shooting-star.svg" alt="" class="separator__star">
+</div>
+
+<section id="contact" class="contact">
+  <h2 class="contact__ttl">Contact</h2>
+  <div class="contact__wrap">
+    <span class="contact__txt">if (is_job_request()) {</span>
+    <a href="" class="contact__link"><img src="./assets/img/common/icon_mail.svg" alt="" class="contact__img"><span class="contact__link-txt">Message me</span></a>
+    <span class="contact__txt">} else {<br>　( ´・ω・｀ )<br>}</span>
+  </div>
+</section>
 
 </body>
 </html>
