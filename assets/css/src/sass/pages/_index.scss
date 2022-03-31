@@ -16,6 +16,9 @@
   opacity: 0.3;
   z-index: -1;
   pointer-events: none;
+  @include media(md) {
+    display: none;
+  }
   &:nth-child(1) {
     background-image: url(../../img/common/bg_hexagon_01.png);
   }
