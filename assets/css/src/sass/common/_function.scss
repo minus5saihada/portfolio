@@ -13,3 +13,7 @@ $viewport-height-pc: 937; // 基準となるビューポート(PC)
 @function px-to-vh-pc($num, $height: $viewport-height-pc) {
   @return (1vh * $num / $height * 100);
 }
+$viewport-height-sp: 812; // 基準となるビューポート(PC)
+@function px-to-vh-pc($num, $height: $viewport-height-sp) {
+  @return (1vh * $num / $height * 100);
+}

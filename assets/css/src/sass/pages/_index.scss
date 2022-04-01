@@ -1,7 +1,8 @@
 // 変数定義
 :root {
   --offset: 0;
-  --vh: 1080;
+  --first-animation-offset: 0;
+  --tenth-animation-offset: 0;
 }
 
 // js-floater
@@ -155,6 +156,10 @@
         // top: calc(66.16862vh + var(--offset) * 1px);
         // top: px-to-vh-pc(650);
         top: calc(69.37033vh + var(--offset) * 1px);
+        // @include media(sm) {
+        //   top: px-to-vh-pc(755);
+        //   top: calc(92.9803vh + var(--offset) * 1px);
+        // }
       }
       &:nth-child(2) {
         // top: px-to-vh-pc(150);
@@ -207,6 +212,23 @@
       &:nth-child(14) {
         top: calc(var(--offset) * 1px);
       }
+    }
+    &--first-to-bottom {
+      top: calc(var(--first-animation-offset) * 1px) !important;
+    }
+    &--tenth-to-bottom {
+      top: calc(var(--tenth-animation-offset) * 1px) !important;
+      animation: gear-left 7s linear infinite !important;
+      // opacity: 1;
+    }
+    &--rotate {
+      left: px-to-vw-pc(1051) !important;
+      // opacity: 1;
+      transition: 2.5s;
+    }
+    &--gold {
+      opacity: 1;
+      transition: .5s;
     }
   }
 }
@@ -366,7 +388,7 @@
   flex-direction: column;
   align-items: center;
   gap: px-to-vw-pc(50);
-  margin: px-to-vw-pc(300) 0;
+  margin: px-to-vw-pc(300) 0 px-to-vw-pc(600);
   &__ttl {
     font-size: px-to-vw-pc(60);
   }
