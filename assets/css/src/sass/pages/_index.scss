@@ -219,16 +219,17 @@
     &--tenth-to-bottom {
       top: calc(var(--tenth-animation-offset) * 1px) !important;
       animation: gear-left 7s linear infinite !important;
-      // opacity: 1;
     }
     &--rotate {
       left: px-to-vw-pc(1051) !important;
-      // opacity: 1;
       transition: 2.5s;
     }
     &--gold {
       opacity: 1;
       transition: .5s;
+      z-index: 0;
+      pointer-events: auto;
+      cursor: pointer;
     }
   }
 }
@@ -417,5 +418,22 @@
   &__img {
     width: px-to-vw-pc(55);
     height: px-to-vw-pc(39.51);
+  }
+}
+
+// back-to-top
+.back-to-top {
+  position: absolute;
+  bottom: px-to-vw-pc(80);
+  right: px-to-vw-pc(70);
+  font-size: px-to-vw-pc(35);
+  color: #EAC75A;
+  opacity: 0;
+  pointer-events: none;
+  transition: 1s .5s;
+  &--gold {
+    opacity: 1;
+    pointer-events: auto;
+    cursor: pointer;
   }
 }

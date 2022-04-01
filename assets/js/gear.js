@@ -27,6 +27,7 @@ $(function() {
       setTimeout(() => {
         $('.gear__img--first').addClass("gear__img--gold");
         $('.gear__img--tenth').addClass("gear__img--gold");
+        $('.back-to-top').addClass("back-to-top--gold");
       }, 3200);
     } else {
       $('.gear__img--first').removeClass('gear__img--first-to-bottom');
@@ -34,6 +35,11 @@ $(function() {
       $('.gear__img--tenth').removeClass('gear__img--tenth-to-bottom');
       $('.gear__img--first').removeClass("gear__img--gold");
       $('.gear__img--tenth').removeClass("gear__img--gold");
+      $('.back-to-top').removeClass("back-to-top--gold");
     }
+  });
+  $('.gear__img--first, .gear__img--tenth, .back-to-top').click(function() {
+    $('body, html').animate({scrollTop: 0}, 800);
+      return false;
   });
 });
