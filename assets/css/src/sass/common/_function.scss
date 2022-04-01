@@ -1,9 +1,15 @@
 // px→vw変換用関数
-$viewport-pc: 1920; // 基準となるビューポート(PC)
-@function px-to-vw-pc($num, $width: $viewport-pc) {
+$viewport-width-pc: 1920; // 基準となるビューポート(PC)
+@function px-to-vw-pc($num, $width: $viewport-width-pc) {
   @return (1vw * $num / $width * 100);
 }
-$viewport-sp: 375; // 基準となるビューポート(SP)
-@function px-to-vw-sp($num, $width: $viewport-sp) {
+$viewport-width-sp: 375; // 基準となるビューポート(SP)
+@function px-to-vw-sp($num, $width: $viewport-width-sp) {
   @return (1vw * $num / $width * 100);
+}
+
+// px→vh変換用関数
+$viewport-height-pc: 937; // 基準となるビューポート(PC)
+@function px-to-vh-pc($num, $height: $viewport-height-pc) {
+  @return (1vh * $num / $height * 100);
 }
