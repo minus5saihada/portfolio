@@ -315,7 +315,7 @@
     text-align: center;
     line-height: px-to-vw-pc(80);
     @include media(sm) {
-      font-size: 20px;
+      font-size: 18px;
       line-height: 30px;
     }
   }
@@ -355,7 +355,7 @@
     gap: px-to-vw-pc(40);
     width: px-to-vw-pc(700);
     @include media(sm) {
-      gap: 22px;
+      gap: 20px;
       width: 100%;
     }
   }
@@ -378,7 +378,7 @@
   &__language {
     font-size: px-to-vw-pc(40);
     @include media(sm) {
-      font-size: 16px;
+      font-size: 14px;
     }
   }
   &__progress-bar {
@@ -530,6 +530,7 @@
   transition: 1s .5s;
   @include media(sm) {
     right: 5px;
+    font-size: 12px;
   }
   &--gold {
     opacity: 1;
