@@ -16,6 +16,7 @@
     width: px-to-vw-pc(67);
     height: px-to-vw-pc(50);
     z-index: 2;
+    pointer-events: none;
     cursor: pointer;
     @include media(sm) {
       top: 7px;
@@ -76,6 +77,7 @@
     padding-left: px-to-vw-pc(100);
     transition: .5s;
     z-index: 1;
+    pointer-events: none;
     @include media(sm) {
       gap: 18px;
       width: 160px;
@@ -90,6 +92,7 @@
     color: #d3d3d3;
     transform: translateX(-550px);
     opacity: 0;
+    pointer-events: auto;
     @include media(sm) {
       font-size: 22px;
     }
