@@ -246,10 +246,15 @@
     align-items: center;
     transform: translateY(px-to-vw-pc(80));
     font-size: px-to-vw-pc(80);
+    @include media(sm) {
+      font-size: 30px;
+    }
   }
   &__sub-ttl {
-    font-size: px-to-vw-pc(138);
     font-size: px-to-vw-pc(49);
+    @include media(sm) {
+      font-size: 20px;
+    }
   }
 }
 
@@ -261,10 +266,17 @@
   pointer-events: none;
   &--margin-top-300 {
     margin-top: px-to-vw-pc(300);
+    @include media(sm) {
+      margin-top: 100px;
+    }
   }
   &__trajectory {
     width: px-to-vw-pc(3);
     height: px-to-vw-pc(324);
+    @include media(sm) {
+      width: 2px;
+      height: 200px;
+    }
   }
   &__star {
     position: absolute;
@@ -273,6 +285,11 @@
     width: px-to-vw-pc(28);
     height: px-to-vw-pc(28);
     animation: shooting-star 2s infinite;
+    @include media(sm) {
+      width: 18px;
+      height: 18px;
+      animation: shooting-star-sp 2s infinite;
+    }
   }
 }
 
@@ -283,13 +300,24 @@
   align-items: center;
   gap: px-to-vw-pc(200);
   margin-top: px-to-vw-pc(300);
+  @include media(sm) {
+    gap: 50px;
+    margin-top: 100px;
+  }
   &__ttl {
     font-size: px-to-vw-pc(60);
+    @include media(sm) {
+      font-size: 25px;
+    }
   }
   &__txt {
     font-size: px-to-vw-pc(50);
     text-align: center;
     line-height: px-to-vw-pc(80);
+    @include media(sm) {
+      font-size: 20px;
+      line-height: 30px;
+    }
   }
 }
 
@@ -299,8 +327,14 @@
   flex-direction: column;
   align-items: center;
   margin-top: px-to-vw-pc(300);
+  @include media(sm) {
+    margin-top: 100px;
+  }
   &__ttl {
     font-size: px-to-vw-pc(60);
+    @include media(sm) {
+      font-size: 25px;
+    }
   }
   &__wrap {
     display: flex;
@@ -309,30 +343,52 @@
     flex-wrap: wrap;
     width: px-to-vw-pc(1500);
     margin-top: px-to-vw-pc(100);
+    @include media(sm) {
+      flex-direction: column;
+      gap: 50px;
+      width: 300px;
+    }
   }
   &__item {
     display: flex;
     flex-direction: column;
     gap: px-to-vw-pc(40);
     width: px-to-vw-pc(700);
+    @include media(sm) {
+      gap: 22px;
+      width: 100%;
+    }
   }
   &__skill {
     font-size: px-to-vw-pc(50);
     text-align: center;
+    @include media(sm) {
+      font-size: 20px;
+      text-align: left;
+    }
   }
   &__level {
     display: flex;
     flex-direction: column;
     gap: px-to-vw-pc(20);
+    @include media(sm) {
+      gap: 5px;
+    }
   }
   &__language {
     font-size: px-to-vw-pc(40);
+    @include media(sm) {
+      font-size: 16px;
+    }
   }
   &__progress-bar {
     display: flex;
     width: 100%;
     height: px-to-vw-pc(50);
     background-color: #fff;
+    @include media(sm) {
+      height: 22px;
+    }
   }
   &__bar {
     display: flex;
@@ -342,6 +398,11 @@
     font-size: px-to-vw-pc(20);
     color: #fff;
     padding-left: px-to-vw-pc(15);
+    @include media(sm) {
+      gap: 3px;
+      font-size: 12px;
+      padding-left: 10px;
+    }
   }
 }
 
@@ -352,8 +413,14 @@
   align-items: center;
   gap: px-to-vw-pc(50);
   margin-top: px-to-vw-pc(300);
+  @include media(sm) {
+    margin-top: 100px;
+  }
   &__ttl {
     font-size: px-to-vw-pc(60);
+    @include media(sm) {
+      font-size: 25px;
+    }
   }
   &__link {
     display: flex;
@@ -371,11 +438,19 @@
     height: px-to-vw-pc(350);
     background: #fff;
     border: 1px solid #707070;
+    @include media(sm) {
+      width: 200px;
+      height: 120px;
+    }
   }
   &__txt {
     display: flex;
     gap: px-to-vw-pc(20);
     font-size: px-to-vw-pc(50);
+    @include media(sm) {
+      gap: 10px;
+      font-size: 16px;
+    }
   }
   &__arrow {
     transform: translateY(px-to-vw-pc(8));
@@ -390,8 +465,15 @@
   align-items: center;
   gap: px-to-vw-pc(50);
   margin: px-to-vw-pc(300) 0 px-to-vw-pc(600);
+  @include media(sm) {
+    gap: 20px;
+    margin: 100px 0 200px;
+  }
   &__ttl {
     font-size: px-to-vw-pc(60);
+    @include media(sm) {
+      font-size: 25px;
+    }
   }
   &__wrap {
     display: flex;
@@ -399,6 +481,9 @@
   }
   &__txt {
     font-size: px-to-vw-pc(50);
+    @include media(sm) {
+      font-size: 20px;
+    }
   }
   &__link {
     display: flex;
@@ -410,14 +495,26 @@
     background: #fff;
     border: 1px solid #707070;
     margin: px-to-vw-pc(20) auto;
+    @include media(sm) {
+      gap: 10px;
+      width: 200px;
+      height: 40px;
+    }
   }
   &__link-txt {
     font-size: px-to-vw-pc(35);
     transform: translateY(px-to-vw-pc(4));
+    @include media(sm) {
+      font-size: 16px;
+    }
   }
   &__img {
     width: px-to-vw-pc(55);
     height: px-to-vw-pc(39.51);
+    @include media(sm) {
+      width: 24px;
+      height: 18px;
+    }
   }
 }
 
@@ -431,6 +528,9 @@
   opacity: 0;
   pointer-events: none;
   transition: 1s .5s;
+  @include media(sm) {
+    right: 5px;
+  }
   &--gold {
     opacity: 1;
     pointer-events: auto;
