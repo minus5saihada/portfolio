@@ -15,7 +15,7 @@
     left: px-to-vw-pc(50);
     width: px-to-vw-pc(67);
     height: px-to-vw-pc(50);
-    z-index: 1;
+    z-index: 2;
     cursor: pointer;
     @include media(sm) {
       top: 7px;
@@ -75,10 +75,11 @@
     background: linear-gradient(to right, #07161f, rgba($color: #07161f, $alpha: 0.3));
     padding-left: px-to-vw-pc(100);
     transition: .5s;
+    z-index: 1;
     @include media(sm) {
       gap: 18px;
       width: 160px;
-      transform: translateX(px-to-vw-pc(-160));
+      transform: translateX(-160px);
     }
     &--open {
       transform: translateX(0);
