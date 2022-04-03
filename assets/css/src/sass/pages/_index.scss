@@ -529,8 +529,8 @@
   pointer-events: none;
   transition: 1s .5s;
   @include media(sm) {
-    right: 5px;
-    font-size: 10px;
+    right: 12px;
+    font-size: 14px;
   }
   &--gold {
     opacity: 1;
