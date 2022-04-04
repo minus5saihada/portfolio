@@ -382,22 +382,104 @@
     }
   }
   &__progress-bar {
+    position: relative;
     display: flex;
     width: 100%;
     height: px-to-vw-pc(50);
     background-color: #fff;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 100%;
+      background-color: #707070;
+      transition: 1.5s;
+      z-index: 1;
+    }
     @include media(sm) {
       height: 24px;
+    }
+    &--html-pug {
+      &::before {
+        width: calc(18/36*100%);
+      }
+    }
+    &--css-sass-bem {
+      &::before {
+        width: calc(18/36*100%);
+      }
+    }
+    &--javascript-jquery-vue-react {
+      &::before {
+        width: calc(13/36*100%);
+      }
+    }
+    &--xd-ai-ps-figma {
+      &::before {
+        width: calc(12/36*100%);
+      }
+    }
+    &--php-laravel {
+      &::before {
+        width: calc(13/36*100%);
+      }
+    }
+    &--java-spring {
+      &::before {
+        width: calc(24/36*100%);
+      }
+    }
+    &--shellscript {
+      &::before {
+        width: calc(24/36*100%);
+      }
+    }
+    &--sql {
+      &::before {
+        width: calc(24/36*100%);
+      }
+    }
+    &--docker {
+      &::before {
+        width: calc(13/36*100%);
+      }
+    }
+    &--wordpress {
+      &::before {
+        width: calc(12/36*100%);
+      }
+    }
+    &--git-github-svn {
+      &::before {
+        width: calc(30/36*100%);
+      }
+    }
+    &--gulp-npm-webpack {
+      &::before {
+        width: calc(13/36*100%);
+      }
+    }
+    &--linux {
+      &::before {
+        width: calc(20/36*100%);
+      }
+    }
+    &--apache-nginx {
+      &::before {
+        width: calc(20/36*100%);
+      }
     }
   }
   &__bar {
     display: flex;
     align-items: center;
     gap: px-to-vw-pc(5);
-    background-color: #707070;
     font-size: px-to-vw-pc(20);
     color: #fff;
     padding-left: px-to-vw-pc(15);
+    z-index: 2;
     @include media(sm) {
       gap: 3px;
       font-size: 12px;
