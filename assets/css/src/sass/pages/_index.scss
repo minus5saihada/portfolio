@@ -306,7 +306,9 @@
   }
   &__ttl {
     font-size: px-to-vw-pc(60);
-    animation: text-rotate 4s infinite;
+    @include min-screen(768px) {
+      animation: text-rotate 4s infinite;
+    }
     @include media(sm) {
       font-size: 25px;
     }
@@ -333,7 +335,9 @@
   }
   &__ttl {
     font-size: px-to-vw-pc(60);
-    animation: text-rotate 4s infinite;
+    @include min-screen(768px) {
+      animation: text-rotate 4s infinite;
+    }
     @include media(sm) {
       font-size: 25px;
     }
@@ -502,7 +506,9 @@
   }
   &__ttl {
     font-size: px-to-vw-pc(60);
-    animation: text-rotate 4s infinite;
+    @include min-screen(768px) {
+      animation: text-rotate 4s infinite;
+    }
     @include media(sm) {
       font-size: 25px;
     }
@@ -556,7 +562,9 @@
   }
   &__ttl {
     font-size: px-to-vw-pc(60);
-    animation: text-rotate 4s infinite;
+    @include min-screen(768px) {
+      animation: text-rotate 4s infinite;
+    }
     @include media(sm) {
       font-size: 25px;
     }
