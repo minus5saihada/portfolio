@@ -83,6 +83,7 @@
   100% {
   }
 }
+
 @keyframes arrow-to-right {
   0% {
   }
@@ -98,5 +99,14 @@
     opacity: 0;
   }
   100% {
+  }
+}
+
+@keyframes text-rotate {
+  60% {
+    transform: rotateX(0);
+  }
+  100% {
+    transform: rotateX(1turn);
   }
 }

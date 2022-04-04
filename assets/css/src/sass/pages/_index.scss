@@ -306,6 +306,7 @@
   }
   &__ttl {
     font-size: px-to-vw-pc(60);
+    animation: text-rotate 4s infinite;
     @include media(sm) {
       font-size: 25px;
     }
@@ -332,6 +333,7 @@
   }
   &__ttl {
     font-size: px-to-vw-pc(60);
+    animation: text-rotate 4s infinite;
     @include media(sm) {
       font-size: 25px;
     }
@@ -453,7 +455,7 @@
     }
     &--git-github-svn {
       &::before {
-        width: calc(30/36*100%);
+        width: calc(36/36*100%);
       }
     }
     &--gulp-npm-webpack {
@@ -463,7 +465,7 @@
     }
     &--linux {
       &::before {
-        width: calc(20/36*100%);
+        width: calc(24/36*100%);
       }
     }
     &--apache-nginx {
@@ -500,6 +502,7 @@
   }
   &__ttl {
     font-size: px-to-vw-pc(60);
+    animation: text-rotate 4s infinite;
     @include media(sm) {
       font-size: 25px;
     }
@@ -553,6 +556,7 @@
   }
   &__ttl {
     font-size: px-to-vw-pc(60);
+    animation: text-rotate 4s infinite;
     @include media(sm) {
       font-size: 25px;
     }
