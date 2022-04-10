@@ -317,9 +317,21 @@
     font-size: px-to-vw-pc(50);
     text-align: center;
     line-height: px-to-vw-pc(80);
+    opacity: 0;
+    transition: 1s;
     @include media(sm) {
       font-size: 18px;
       line-height: 30px;
+    }
+    &--sentence {
+      transform: translateX(-100px);
+      @include media(sm) {
+        transform: translateX(-50px);
+      }
+    }
+    &--open {
+      transform: translateX(0);
+      opacity: 1;
     }
   }
 }

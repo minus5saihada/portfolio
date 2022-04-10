@@ -1,4 +1,41 @@
 $(function() {
+  // About me
+  $('.js-tapioca-milk-tea-store-manager').on('inview', function(event, isInView) {
+    if (isInView) {
+      $(this).addClass('about-me__txt--open');
+    } else {
+      $(this).removeClass('about-me__txt--open');
+    }
+  });
+  $('.js-arrow-first').on('inview', function(event, isInView) {
+    if (isInView) {
+      $(this).addClass('about-me__txt--open');
+    } else {
+      $(this).removeClass('about-me__txt--open');
+    }
+  });
+  $('.js-business-system-engineer').on('inview', function(event, isInView) {
+    if (isInView) {
+      $(this).addClass('about-me__txt--open');
+    } else {
+      $(this).removeClass('about-me__txt--open');
+    }
+  });
+  $('.js-arrow-second').on('inview', function(event, isInView) {
+    if (isInView) {
+      $(this).addClass('about-me__txt--open');
+    } else {
+      $(this).removeClass('about-me__txt--open');
+    }
+  });
+  $('.js-freelance-web-engineer').on('inview', function(event, isInView) {
+    if (isInView) {
+      $(this).addClass('about-me__txt--open');
+    } else {
+      $(this).removeClass('about-me__txt--open');
+    }
+  });
+  // Skills
   $('.js-html-pug').on('inview', function(event, isInView) {
     if (isInView) {
       $(this).addClass('skills__progress-bar--html-pug');
